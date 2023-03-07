@@ -1,0 +1,29 @@
+div {
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    overflow-x: auto;
+}
+
+th {
+    text-align: left;
+    background-color: rgb(226, 154, 66);
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    min-width: 100px;
+    font-size: 12px;
+}
+
+th, td {
+    padding: 5px 4px;
+}
+
+tr:nth-child(even) {
+    background-color: #f7e7e7;
+}
+
