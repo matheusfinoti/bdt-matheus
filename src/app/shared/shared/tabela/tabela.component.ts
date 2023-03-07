@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Viagem } from 'src/app/models/viagem';
 
 @Component({
   selector: 'app-tabela',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./tabela.component.scss']
 })
 export class TabelaComponent {
+  
+  lstViagem: Array<Viagem> = [];
 
+  constructor() {
+    this.lstViagem = [{"Id": 2}]
+  }
 }
