@@ -1,15 +1,18 @@
 <section>
 
-  <h1>Fixed Table header</h1>
-  
-  <app-tabela></app-tabela>
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Registrar Viagem</a></li>
+      <li><a href="#">Motoristas</a></li>
+      <li><a href="#">Viagens</a></li>
+      <li><a href="#">Sobre</a></li>
+    </ul>
+  </nav>
+
+
+  <h1>Boletim Diário de Transporte</h1>
+
+  <app-tabela [list]="listaViagem"></app-tabela>
+
 
 </section>
-
-
-<!-- follow me template -->
-<div class="made-with-love">
-  Made with
-  <i>♥</i> by
-  <a target="_blank" href="https://codepen.io/nikhil8krishnan">Finotão</a>
-</div>

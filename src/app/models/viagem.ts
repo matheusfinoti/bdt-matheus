@@ -9,11 +9,11 @@ export class Viagem {
     private Destino: string;
     private Motorista: Motorista;
     private Detalhe: string;
-    private OdometroSaida: number;
-    private OdometroChegada: number;
+    private KmSaida: number;
+    private KmChegada: number;
 
 
-    constructor(id: number, dataSaida: Date, dataRetorno: Date, horaSaida: Date, horaRetorno: Date, destino: string, motorista: Motorista, detalhe: string, odometroSaida: number, odometroChegada: number) {
+    constructor(id: number, dataSaida: Date, dataRetorno: Date, horaSaida: Date, horaRetorno: Date, destino: string, motorista: Motorista, detalhe: string, kmSaida: number, kmChegada: number) {
         this.Id = id;
         this.DataSaida = dataSaida;
         this.DataRetorno = dataRetorno;
@@ -22,7 +22,7 @@ export class Viagem {
         this.Destino = destino;
         this.Motorista = motorista;
         this.Detalhe = detalhe;
-        this.OdometroChegada = odometroChegada;
-        this.OdometroSaida = odometroSaida;
+        this.KmChegada = kmChegada;
+        this.KmSaida = kmSaida;
     }
 }

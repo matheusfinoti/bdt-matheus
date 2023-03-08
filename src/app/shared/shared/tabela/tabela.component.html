@@ -1,5 +1,4 @@
 <div>
-    {{ lstViagem }}
     <table>
         <thead>
             <tr>
@@ -7,6 +6,7 @@
                 <th>Hora Saída</th>
                 <th>Motorista</th>
                 <th>Destino</th>
+                <th>Veículo</th>
                 <th>KM Saída</th>
                 <th>KM Chegada</th>
                 <th>Hora Chegada</th>
@@ -14,55 +14,16 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td></td>
-                <td>Masculino</td>
-                <td>matheus@matheus.com</td>
-                <td>1398891263</td>
-                <td>Matheus</td>
-                <td>Masculino</td>
-                <td>matheus@matheus.com</td>
-                <td>1398891263</td>
-            </tr>
-            <tr>
-                <td>Érika</td>
-                <td>Feminino</td>
-                <td>erika@erika.com</td>
-                <td>1278361278</td>
-                <td>Matheus</td>
-                <td>Masculino</td>
-                <td>matheus@matheus.com</td>
-                <td>1398891263</td>
-            </tr>
-            <tr>
-                <td>Woody</td>
-                <td>Miau</td>
-                <td>woody@woody.com</td>
-                <td>78782316812</td>
-                <td>Matheus</td>
-                <td>Masculino</td>
-                <td>matheus@matheus.com</td>
-                <td>1398891263</td>
-            </tr>
-            <tr>
-                <td>Woody</td>
-                <td>Miau</td>
-                <td>woody@woody.com</td>
-                <td>78782316812</td>
-                <td>Matheus</td>
-                <td>Masculino</td>
-                <td>matheus@matheus.com</td>
-                <td>1398891263</td>
-            </tr>
-            <tr>
-                <td>Woody</td>
-                <td>Miau</td>
-                <td>woody@woody.com</td>
-                <td>78782316812</td>
-                <td>Matheus</td>
-                <td>Masculino</td>
-                <td>matheus@matheus.com</td>
-                <td>1398891263</td>
+            <tr *ngFor="let lista of list">
+                <td>{{lista.dataSaida}}</td>
+                <td>{{lista.horaSaida}}</td>
+                <td>{{lista.motorista}}</td>
+                <td>{{lista.destino}}</td>
+                <td>{{lista.veiculo}}</td>
+                <td>{{lista.kmSaida}}</td>
+                <td>{{lista.kmChegada}}</td>
+                <td>{{lista.horaChegada}}</td>
+                <td>{{lista.horaChegada}}</td>
             </tr>
         </tbody>
     </table>
